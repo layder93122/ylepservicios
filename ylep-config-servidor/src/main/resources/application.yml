@@ -1,0 +1,21 @@
+server:
+  port: 7070
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          # ruta de tuuuu repositorio git :V
+          uri: https://github.com/layder93122/ylepservicios.git
+          searchPaths: config-data
+          default-label: main
+  security:
+    user:
+      #recordar este apartado para tus microservicios :V
+      #Pon el usuario que desees
+      name: layder
+      #pon la contraseña que desees
+      password: layder
