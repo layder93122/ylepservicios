@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: ms-libro-service
+  profiles:
+    active: development
+  config:
+    import: optional:configserver:http://layder:layder@localhost:7070
